@@ -1,0 +1,34 @@
+!!! Strict
+%html(lang="en")
+	%head
+		%meta(charset="utf-8")
+		%meta(http-equiv="X-UA-Compatible" content="IE=9,chrome=1")
+
+		%link(rel="stylesheet" type="text/css" href="style.css")
+
+	%body
+		.col1
+			.date-header
+				%datehead= Date.today.strftime "%A"
+				<br>
+				%datesub= Date.today.strftime "%B %-d, %Y"
+
+			.schedule
+				%head2 Schedule
+
+				- @upcoming.each do |event|
+					%p
+						= event[:start].strftime("%b %e, %I:%M %p")
+						to
+						= event[:end].strftime("%I:%M %p")
+						%b - #{event[:title]}
+
+			.roomreserve
+				%head2 Room Reservations
+
+		.col2
+			.eventshead
+				%head1 Upcoming Events
+
+		.col3
+			%head2 Featured Project

@@ -1,0 +1,137 @@
+html { 
+  margin:0; padding: 0; height: 100% 
+}
+
+/*fontfaces*/
+
+@font-face {
+  font-family: universcond;
+  src: url('Fonts/UniversLTStd-Cn.otf');
+}
+
+@font-face {
+  font-family: universlightcond;
+  src: url('Fonts/UniversLTStd-LightCn.otf');
+}
+
+@font-face {
+  font-family: universlight;
+  src: url('Fonts/UniversLTStd-Light.otf');
+}
+
+@font-face {
+  font-family: universboldcond;
+  src: url('Fonts/UniversLTStd-BoldCn.otf');
+}
+
+/*font definitions*/
+
+body { 
+  font-size: 20px;
+  font-family: universlight; 
+  color: white;
+}
+
+
+datehead {
+  font-family: universlightcond;
+  font-size: 80px;
+  color: white;
+  text-transform:uppercase;
+  letter-spacing: -3px;
+	margin: 5px;
+	line-height: 80px;
+
+
+}
+
+datesub {
+  font-family: universlightcond;
+  font-size: 35px;
+  color: white;
+  text-transform:uppercase;
+  padding:0px 10px 10px;
+	line-height: 10px;
+}
+
+head1 {
+  font-family: universboldcond;
+  font-size: 80px;
+  color: white;
+  text-transform:uppercase;
+	margin: 5px;
+	line-height: 80px;
+}
+
+head2 {
+  font-family: universcond;
+  font-size: 50px;
+  color: white;
+  text-transform:uppercase;
+  letter-spacing: -1.5px;
+  padding: 10px 0px;
+}
+
+/*structure*/
+
+.col1, .col2, .col3 {
+  height: 1080px;
+  float: left;
+}
+
+.col1 {
+  width: 768px; 
+  background: #225297;
+
+}
+
+.col2 {
+  width: 768px;
+  background: #70b744;
+
+
+}
+
+.col3 {
+  width: 384px;
+  background: #f16667;
+
+
+}
+
+.date-header {
+  padding: 20px;
+  background: #00aeef;
+
+}
+
+.staff-info {
+  padding: 10px;
+  background: #006090;
+
+}
+
+
+.schedule {
+  padding: 10px;
+  background: #21649f;
+	width: 192px;
+
+}
+
+
+.roomreserve {
+  padding: 10px;
+  background: #006090;
+	width: 192px;
+
+}
+
+.eventshead {
+  padding: 20px;
+  background: #4D4D4D;
+
+}
+
+
+
