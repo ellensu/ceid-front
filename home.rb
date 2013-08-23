@@ -4,6 +4,8 @@ require 'haml'
 
 # routes
 
+
+
 get '/' do
   @upcoming = read_upcoming_events
 
@@ -19,7 +21,7 @@ def read_upcoming_events
   options = { :future_events => true }
   events = read_calendar cal_url, options
   
-  events
+  events.reverse
 end
 
 REQUEST_CACHE = {}
@@ -27,7 +29,7 @@ REQUEST_CACHE = {}
 def read_calendar(url, options = {})
   require 'net/http'
   require 'rexml/document'
-  
+		
   url = url.gsub("/basic", "/full") + "?orderby=starttime&"
   url += "futureevents=true&" if options[:future_events]
   url += "end-max=" + Date.today.rfc3339 + "&" if options[:only_today]
@@ -49,3 +51,6 @@ def read_calendar(url, options = {})
   end
   events
 end
+
+
+	

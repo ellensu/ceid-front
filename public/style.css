@@ -74,35 +74,43 @@ head2 {
 
 /*structure*/
 
-.col1, .col2, .col3 {
-  height: 1080px;
+.col1, .col2 {
+  height: 600px;
   float: left;
 }
 
 .col1 {
-  width: 768px; 
+  width: 500px; 
   background: #225297;
 
 }
 
 .col2 {
-  width: 768px;
+  width: 500px;
   background: #70b744;
-
 
 }
 
 .col3 {
-  width: 384px;
-  padding: 20px;
+  width: 920px;
+	height: 1080px;
   background: #f16667;
+	position:fixed;
+	left: 1000px;
+	top: 5px;
+}
 
-
+.col4 {
+	height: 480px;
+	width: 1000px;
+	background: #00aeef;
+	clear:both;
 }
 
 .date-header {
   padding: 20px;
   background: #00aeef;
+  padding-top: 25px
 
 }
 
@@ -122,7 +130,8 @@ head2 {
 
 .roomreserve {
   padding: 20px;
-  background: #006090;
+  background: #70b744;
+  margin-bottom: 10px;
 
 }
 
@@ -131,6 +140,4 @@ head2 {
   background: #4D4D4D;
 
 }
-
-
 
