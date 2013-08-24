@@ -74,7 +74,7 @@ head2 {
 
 /*structure*/
 
-.col1, .col2 {
+.col2 {
   height: 800px;
   float: left;
 }
