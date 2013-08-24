@@ -75,12 +75,12 @@ head2 {
 /*structure*/
 
 .col1, .col2 {
-  height: 800px;
+  height: 600px;
   float: left;
 }
 
 .col1 {
-  width: 1366px; 
+  width: 500px; 
   background: #225297;
 
 }
