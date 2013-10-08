@@ -79,8 +79,8 @@ head2 {
 
 .col1 {
   position:fixed;
-  top:0px;
-  left:0px;
+  top:-5px;
+  left:-5px;
   width: 566px; 
   background: #225297;
 
