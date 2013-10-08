@@ -20,6 +20,8 @@ html {
 }
 
 @font-face {
+    src: url('custom_font.eot');
+    src: local(custom_font), url('custom_font.ttf') format('truetype');
   font-family: universboldcond;
   src: url('Fonts/UniversLTStd-BoldCn.otf');
 }
@@ -65,7 +67,7 @@ head1 {
 
 head2 {
   font-family: universcond;
-  font-size: 50px;
+  font-size: 36px;
   color: white;
   text-transform:uppercase;
   letter-spacing: -1.5px;
@@ -74,14 +76,12 @@ head2 {
 
 /*structure*/
 
-.col2 {
-  height: 800px;
-  float: left;
-}
 
 .col1 {
-	position:fixed;
-  width: 1366px; 
+  position:fixed;
+  top:0px;
+  left:0px;
+  width: 566px; 
   background: #225297;
 
 }
@@ -93,46 +93,53 @@ head2 {
 }
 
 .col3 {
-  width: 920px;
-	height: 1080px;
-  background: #f16667;
+  width: 800px;
+	height: 400	px;
+  background: #000000;
 	position:fixed;
-	left: 1000px;
-	top: 5px;
+	left: 566px;
+	top: 0px;
 }
 
 .col4 {
-	height: 480px;
-	width: 1000px;
+	height: 360px;
+	width: 1366px;
 	background: #00aeef;
 	clear:both;
+    position:fixed;
+    left: 0px;
+    top: 440px;
 }
 
 .date-header {
-  padding: 20px;
+  padding: 17px;
   background: #00aeef;
   padding-top: 25px
+  height: 50px;
 
 }
 
-.staff-info {
-  padding: 10px;
+.staff-header {
+  padding: 12px;
   background: #006090;
+	height: 36px;
+
 
 }
 
 
 .schedule {
-  padding: 20px;
-  background: #21649f;
+  padding: 12px;
+  background: #70b744;
+  height:36px;
 
 }
 
 
-.roomreserve {
-  padding: 20px;
-  background: #70b744;
-  margin-bottom: 10px;
+.staff-info {
+  padding-left: 20px;
+  background: #4D4D4D;
+	height: 194px;
 
 }
 
@@ -142,3 +149,7 @@ head2 {
 
 }
 
+.staffimg {
+  margin: 10px;
+
+}
